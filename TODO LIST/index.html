@@ -1,0 +1,66 @@
+<!--input id="input">
+    <button onclick="add()">Add</button>
+    <ul id="listcontainer">
+        <li>Hello
+            <button onclick="del(event)">Delete</button>
+        </li>
+    </ul>
+<script>
+    var ul=document.getElementById("listcontainer")
+    var input=document.getElementById("input")
+    function add(){
+        var listitem=document.createElement("li")
+        listitem.innerHTML=input.value + "<button onclick='del(event)'>Delete</button>"
+        ul.append(listitem)
+    }
+    function del(event){
+        event.target.parentElement.remove()
+
+    }
+</script-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,99.3;1,99.3&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Molestiae debitis iusto impedit esse quisquam
+                unde blanditiis eveniet delectus, veritatis temporibus! Nesciunt asperiores facere eligendi, tempora
+                ipsa dignissimos pariatur perferendis. Error!</p>
+            <button onclick="delbook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popupbox">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="booktitle-input">
+            <input type="text" placeholder="Book Author" id="bookauthor-input">
+            <textarea placeholder="Shore Description" id="bookdesc-input"></textarea>
+            <button id="addbook">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <button class="addbutton" id="addpopup-button">+ </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
