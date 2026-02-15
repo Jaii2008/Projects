@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <section id="header">
+        <a><img src="sneakers.png" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>on all product</h1>
+        <p>Save more with coupns & up to 70% off!</p>
+        <button>Shop now</button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="febox">
+            <img src="fetures/f1.png">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="febox">
+            <img src="fetures/f2.png">
+            <h6> Online order</h6>
+        </div>
+        <div class="febox">
+            <img src="fetures/f3.png">
+            <h6>Save Money</h6>
+        </div>
+        <div class="febox">
+            <img src="fetures/f4.png">
+            <h6>Promotions</h6>
+        </div>
+        <div class="febox">
+            <img src="fetures/f5.png">
+            <h6>Support</h6>
+        </div>
+        <div class="febox">
+            <img src="fetures/f6.png">
+            <h6>24/7 Service</h6>
+        </div>
+    </section>
+
+    <section id="navside">
+        <div class="sidenav">
+            <p style="text-align:right;" onclick="closenav()">
+                <i id="xmark">X</i>
+            </p>
+            <div class="side-navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="shop.html">Shop</a></p>
+                <p class="navbar-link"><a href="about.html">About</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact</a></p>
+                <p class="navbar-link"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Product</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f1.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Blue Edition</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$119</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f3.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Air Force Maroon</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$136</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f4.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Nike Collab</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$150</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f5.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5> CherryRed</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$99</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f6.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Denim Collab</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$139</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f7.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Black Stripes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$119</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1 ">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span>-All t-shirt & Accessories</h2>
+        <button class="normal">Explore More</button>
+
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/n1.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Denim Blue</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$154</h4>
+                </div>
+                
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/n2.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>White perl</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$139</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/f3.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Air Force Red</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$150</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/n5.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Sports Blue</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/n6.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Sprots Red</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$119</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='shop.html';">
+                <img src="products/n8.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>White Sneakers</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$126</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="boxbanner">
+            <h4> crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white" id="bbtn">Learn More</button>
+        </div>
+        <div class="boxbanner banner-2">
+            <h4> spring/summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button  class="white" id="bbtn">Collection</button>
+        </div>
+    </section>
+
+
+    <section id="banner-3">
+        <div class="boxbanner">
+        </div>
+        <div class="boxbanner banner-2">
+        </div>
+        <div class="boxbanner banner-3">
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1" class="section-m1 ">
+        <div class="newstext">
+            <h4>Sign up For Newsletter</h4>
+            <p>Get E-mail update about our latest shop and <span>special offer </span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your E-mail addres">
+            <button class="normal">Sign-up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Hawkins road,street 32,Florida</p>
+            <p><strong>Phone:</strong>+01 33333 598</p>
+            <p><strong>Hours:</strong>10:00 -18:00,Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i id="apps" class="fa-brands fa-instagram"></i>
+                    <i id="apps" class="fa-brands fa-facebook"></i>
+                    <i id="apps" class="fa-brands fa-whatsapp"></i>
+                    <i id="apps" class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or google Play</p>
+            <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay\play.jpg" alt="">
+            </div>
+            <p>From App Store or google Play</p>
+            <img src="pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>0 2024, Clothings limited Webpage,copyright</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

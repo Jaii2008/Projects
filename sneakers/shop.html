@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <section id="header">
+        <a><img src="sneakers.png" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>Stayhome</h2>
+
+        <p>Save more with coupns & up to 70% off!</p>
+    </section>
+
+    <section id="navside">
+        <div class="sidenav">
+            <p style="text-align:right;" onclick="closenav()">
+                <i id="xmark">X</i>
+            </p>
+            <div class="side-navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="shop.html">Shop</a></p>
+                <p class="navbar-link"><a href="about.html">About</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact</a></p>
+                <p class="navbar-link"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></p>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container" id="products">
+
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="products/f1.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Denim Blue</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$154</h4>
+                </div>
+                <a href="javascript:void(0)" onclick="addToCart('Denim Blue', 154, 'products/f1.jpg')">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='sproduct2.html';">
+                <img src="products/n2.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>White perl</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$139</h4>
+                </div>
+                <a href="javascript:void(0)" onclick="addToCart('White Perl', 139, 'products/n2.jpg')">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="products/f3.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Air Force Red</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$150</h4>
+                </div>
+                <a href="javascript:void(0)" onclick="addToCart('Air Force Red', 150, 'products/f3.jpg')">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct2.html';">
+                <img src="products/n5.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Sports Blue</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$129</h4>
+                </div>
+                <a href="javascript:void(0)" onclick="addToCart('Sports Blue', 129, 'products/n5.jpg')">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="products/n6.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Sprots Red</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$119</h4>
+                </div>
+                <a href="javascript:void(0)" onclick="addToCart('Sprots Red', 119, 'products/n6.jpg')">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct2.html';">
+                <img src="products/f7.jpg">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Black Stripes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$126</h4>
+                </div>
+                <a href="javascript:void(0)" onclick="addToCart('Black Stripes', 126, 'products/f7.jpg')">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro-container" id="products">
+
+                <div class="pro" onclick="window.location.href='sproduct.html';">
+                    <img src="products/n1.jpg">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>Blue Stripes</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$154</h4>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToCart('Blue Stripes', 154, 'products/n1.jpg')">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct2.html';">
+                    <img src="products/f2.jpg">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>Air Force Green</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$139</h4>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToCart('Air Force Green', 139, 'products/f2.jpg')">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct.html';">
+                    <img src="products/n3.jpg">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>Air Force Light Green</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToCart('Air Force Light Green', 150, 'products/n3.jpg')">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct2.html';">
+                    <img src="products\n8.jpg">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>Air Force Light Blue</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$129</h4>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToCart('Air Force Light Blue', 129, 'products\n8.jpg')">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct.html';">
+                    <img src="products/f6.jpg">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>Air Force Collab</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$119</h4>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToCart('Air Force Collab', 119, 'products/f6.jpg')">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct2.html';">
+                    <img src="products/n7.jpg">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>Green Sneakers</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$126</h4>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToCart('Green Sneakers', 126, 'products/n7.jpg')">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+
+    <section id="newsletter" class="section-p1" class="section-m1 ">
+        <div class="newstext">
+            <h4>Sign up For Newsletter</h4>
+            <p>Get E-mail update about our latest shop and <span>special offer </span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your E-mail addres">
+            <button class="normal">Sign-up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Hawkins road,street 32,Florida</p>
+            <p><strong>Phone:</strong>+01 33333 598</p>
+            <p><strong>Hours:</strong>10:00 -18:00,Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i id="apps" class="fa-brands fa-instagram"></i>
+                    <i id="apps" class="fa-brands fa-facebook"></i>
+                    <i id="apps" class="fa-brands fa-whatsapp"></i>
+                    <i id="apps" class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or google Play</p>
+            <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay\play.jpg" alt="">
+            </div>
+            <p>From App Store or google Play</p>
+            <img src="pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>0 2024, Clothings limited Webpage,copyright</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

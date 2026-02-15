@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <section id="header">
+        <a><img src="sneakers.png" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#let's talk</h2>
+
+        <p>Leave a message,we love to hear from you</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cart-content">
+                
+            </tbody>
+        </table>
+    </section>
+    <section id="cartadd" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupen">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart SubTotal</td>
+                    <td id="final-subtotal">$0</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong id="final-total">$335</strong></td>
+
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+
+    </section>
+
+    <section id="navside">
+        <div class="sidenav">
+            <p style="text-align:right;" onclick="closenav()">
+                <i id="xmark">X</i>
+            </p>
+            <div class="side-navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="shop.html">Shop</a></p>
+                <p class="navbar-link"><a href="about.html">About</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact</a></p>
+                <p class="navbar-link"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Hawkins road,street 32,Florida</p>
+            <p><strong>Phone:</strong>+01 33333 598</p>
+            <p><strong>Hours:</strong>10:00 -18:00,Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i id="apps" class="fa-brands fa-instagram"></i>
+                    <i id="apps" class="fa-brands fa-facebook"></i>
+                    <i id="apps" class="fa-brands fa-whatsapp"></i>
+                    <i id="apps" class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or google Play</p>
+            <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay\play.jpg" alt="">
+            </div>
+            <p>From App Store or google Play</p>
+            <img src="pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>0 2024, Clothings limited Webpage,copyright</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
