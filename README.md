@@ -14,6 +14,7 @@ Gemini • ChatGPT • Claude • Cursor
 -----------------------------------------------------------------------
 🎨 Design Journey:
 Beginner in Figma (UI/UX Design & Prototyping)
+
 🌱 Currently exploring the intersection of Frontend Development + AI-powered workflows to build smarter and faster applications.
 -----------------------------------------------------------------------
 🚀 Mindset:
