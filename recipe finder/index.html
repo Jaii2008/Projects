@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="recipe-finder-container">
+      <h1>Recipe Finder</h1>
+
+      <form id="search-form" class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by name (eg. 'carrot')"
+        />
+
+        <button type="submit" id="search-button">Search</button>
+      </form>
+
+      <div class="random-button-container">
+        <button id="random-button" class="random-button">
+          Get Random Recipe
+        </button>
+      </div>
+
+      <div class="message" id="message-area">
+        Search for a recipe or get a random one!
+      </div>
+
+      <div class="results-grid" id="results-grid"></div>
+    </div>
+
+    <div class="modal-container hidden" id="recipe-modal">
+      <div class="modal-content">
+        <button id="modal-close-btn" class="modal-close-btn">+</button>
+        <div id="recipe-details-content"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
